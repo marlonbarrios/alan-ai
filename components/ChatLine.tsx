@@ -18,7 +18,7 @@ export const LoadingChatLine = () => (
       <div className="min-w-0 flex-1">
         <p className="font-large text-xxl text-gray-900">
           <a href="#" className="hover:underline">
-            AI
+          Alan
           </a>
         </p>
         <div className="space-y-4 pt-4">
@@ -32,7 +32,6 @@ export const LoadingChatLine = () => (
     </div>
   </div>
 )
-
 // util helper to convert new lines to <br /> tags
 const convertNewLines = (text: string) =>
   text.split('\n').map((line, i) => (
@@ -60,7 +59,7 @@ export function ChatLine({ role = 'assistant', content }: ChatGPTMessage) {
             <div className="flex-1 gap-4">
               <p className="font-large text-xxl text-gray-900">
                 <a href="#" className="hover:underline">
-                  {role == 'assistant' ? 'AI' : 'You'}
+                  {role == 'assistant' ? 'Alan' : 'You'}
                 </a>
               </p>
               <p

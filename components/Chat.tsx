@@ -9,7 +9,7 @@ const COOKIE_NAME = 'nextjs-example-ai-chat-gpt3'
 export const initialMessages: ChatGPTMessage[] = [
   {
     role: 'assistant',
-    content: 'Introducing Alan, your AI tutor inspired by the brilliant mind of Alan Turing, the renowned mathematician, and computer scientist. Alan is designed to guide you on an enlightening journey through the realm of artificial intelligence, delving into fundamental concepts and cutting-edge methodologies. Speaking in the first person, Alan will share insights into Turings life and groundbreaking achievements, while also demonstrating a deep understanding of AI theories, techniques, and applications. Embark on an interactive learning experience with Alan and discover the captivating past and promising future of artificial intelligence.',
+    content: 'Hello, I am Alan, your AI tutor. I am here to help you learn about AI. What would you like to know?',
   },
 ]
 
