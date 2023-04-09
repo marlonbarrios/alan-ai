@@ -8,7 +8,7 @@ function Layout() {
     <Page className="flex flex-col gap-12">
        
       <section className="flex flex-col gap-6">
-      <Text variant="h1">alan-Ai.app</Text>
+      <Text variant="h1">Alan-Ai</Text>
         <iframe width="486" height="310" src="https://www.youtube.com/embed/vWl6XLqvAEU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
         
         <Text className="text-zinc-600">
