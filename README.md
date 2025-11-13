@@ -1,21 +1,41 @@
-# Alan AI
+# Alan-AI
 
 An AI-powered chatbot created as an homage to the brilliant mind of Alan Turing, the renowned mathematician and computer scientist. Alan is designed to guide users on an enlightening journey through the realm of artificial intelligence, philosophy of AI, computational creativity, and generative art.
 
 ## Features
 
+### Core Capabilities
 - **GPT-4o Powered**: Uses OpenAI's latest and most capable model for intelligent conversations
 - **Web Search Integration**: Built-in internet access using DuckDuckGo (no third-party API required)
 - **PDF Export**: Download entire conversations as formatted PDFs for future reference
-- **Alan Turing Focus**: Deep knowledge of Alan Turing's life, work, and contributions
-- **AI & Art Expertise**: Comprehensive understanding of:
-  - Artificial Intelligence (theoretical and technical)
-  - Generative AI and creative coding
-  - Art and AI intersections
-  - Generative artists and AI art practices
-  - Computational creativity
-- **Responsive Design**: Fully responsive, liquid layout that adapts to all screen sizes
 - **Streaming Responses**: Real-time streaming of AI responses for better user experience
+- **Responsive Design**: Fully responsive, liquid layout that adapts to all screen sizes
+
+### Interactive Code Execution
+- **p5.js Support**: Run p5.js code directly in the chat interface with p5.sound library support
+- **JavaScript Execution**: Execute JavaScript code in a sandboxed environment
+- **HTML Preview**: View HTML code in a separate window
+- **Code Runner Features**:
+  - Fullscreen mode for immersive code viewing
+  - Window resize handling - code adapts to window size changes
+  - Copy code button for easy code sharing
+  - Responsive canvas that adjusts to container size
+  - New window option for larger viewing area
+
+### Expertise Areas
+Alan has deep knowledge in:
+- **Alan Turing**: Life, work, and contributions to computer science and AI
+- **Artificial Intelligence**: Theoretical foundations and technical implementation
+- **Generative AI**: Theoretical understanding and technical details
+- **Computational Creativity**: Creative coding and generative systems
+- **Art & AI**: Intersection of artificial intelligence and artistic practice
+- **Generative Art**: Algorithmic art, procedural generation, and AI-generated artworks
+- **Creative Coding Resources**:
+  - p5.js and p5.sound libraries
+  - "The Nature of Code" by Daniel Shiffman
+  - "The Coding Train" YouTube channel
+  - "Generative Design: Visualize, Program, and Create with JavaScript in P5.js"
+  - "Computational Creativity: The Practice of Generative Systems" course content
 
 ## Tech Stack
 
@@ -26,6 +46,7 @@ An AI-powered chatbot created as an homage to the brilliant mind of Alan Turing,
 - **Tailwind CSS** - Utility-first styling
 - **jsPDF** - PDF generation for conversation export
 - **React Cookie** - Cookie management for user sessions
+- **p5.js** - Creative coding library (loaded dynamically for code execution)
 
 ## Getting Started
 
@@ -38,8 +59,8 @@ An AI-powered chatbot created as an homage to the brilliant mind of Alan Turing,
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
-cd alan-ai-mondrian
+git clone https://github.com/marlonbarrios/alan-ai.git
+cd alan-ai
 ```
 
 2. Install dependencies:
@@ -80,6 +101,30 @@ pnpm dev
   - Art and AI intersections
   - Philosophy of AI
   - Current events (via web search)
+  - p5.js and creative coding projects
+
+<div align="center">
+  <img src="./public/Screenshot%202025-11-13%20at%201.38.26%20PM.png" alt="Alan-AI Chat Interface" width="800"/>
+  <p><em>Main chat interface with conversation history</em></p>
+</div>
+
+### Running Code Examples
+
+When Alan provides code examples:
+
+1. **p5.js Code**: Click "▶ Run Code" to execute p5.js sketches directly in the chat
+2. **JavaScript Code**: Run JavaScript code in a sandboxed iframe
+3. **HTML Code**: Click "🌐 View HTML" to preview HTML in a new window
+4. **Fullscreen**: Click "⛶ Fullscreen" to view code output in fullscreen mode
+5. **Copy Code**: Click the "Copy" button in the top-right of code blocks to copy code to clipboard
+6. **New Window**: Click "🔗 New Window" to open code output in a separate popup window
+
+<div align="center">
+  <img src="./public/Screenshot%202025-11-13%20at%201.40.08%20PM.png" alt="Code Execution" width="800"/>
+  <p><em>Interactive code execution with p5.js</em></p>
+</div>
+
+The code output automatically adapts to window size changes, especially for p5.js code using `windowWidth` and `windowHeight`.
 
 ### Downloading Conversations
 
@@ -98,7 +143,7 @@ Alan automatically uses web search when needed for:
 - Up-to-date information
 - Facts that may not be in training data
 
-No additional API keys required - uses DuckDuckGo HTML interface.
+No additional API keys required - uses DuckDuckGo HTML interface. All search results are cited with references.
 
 ## Configuration
 
@@ -113,23 +158,47 @@ No additional API keys required - uses DuckDuckGo HTML interface.
 ## Project Structure
 
 ```
-alan-ai-mondrian/
+alan-ai/
 ├── components/
-│   ├── Chat.tsx          # Main chat component
-│   ├── ChatLine.tsx      # Individual message component
-│   ├── Button.tsx        # Reusable button component
-│   └── Layout.tsx        # App layout wrapper
+│   ├── Chat.tsx          # Main chat component with PDF download
+│   ├── ChatLine.tsx       # Individual message component
+│   ├── CodeBlock.tsx      # Code block with copy button
+│   ├── CodeRunner.tsx     # Interactive code execution component
+│   ├── Button.tsx         # Reusable button component
+│   └── Layout.tsx         # App layout wrapper with SEO
 ├── pages/
-│   ├── index.tsx         # Main page
+│   ├── index.tsx         # Main page with introduction
 │   ├── _app.tsx          # App wrapper with CookiesProvider
 │   └── api/
 │       └── chat.ts       # Chat API endpoint with function calling
 ├── utils/
 │   ├── OpenAIStream.ts   # OpenAI streaming utility
-│   ├── webSearch.ts      # Web search functionality
-│   └── generatePDF.ts    # PDF generation utility
+│   ├── webSearch.ts      # Web search functionality (DuckDuckGo)
+│   └── generatePDF.ts   # PDF generation utility
 └── .env                  # Environment variables (not in git)
 ```
+
+## Code Execution
+
+### Supported Languages
+
+- **p5js**: Full p5.js support with p5.sound library
+  - Use `createCanvas(windowWidth, windowHeight)` for responsive sketches
+  - Define `windowResized()` function for custom resize handling
+- **javascript**: Standard JavaScript execution
+- **html**: HTML preview in new window
+
+### Code Runner Features
+
+- **Sandboxed Execution**: Code runs in isolated iframe for security
+- **Responsive Design**: Canvas adapts to container and window size
+- **Fullscreen Support**: Enter/exit fullscreen mode for immersive viewing
+- **Cross-Browser Compatible**: Works on Chrome, Firefox, Safari, Edge
+
+<div align="center">
+  <img src="./public/Screenshot%202025-11-13%20at%201.40.19%20PM.png" alt="Code Runner Features" width="800"/>
+  <p><em>Code runner with fullscreen and resize options</em></p>
+</div>
 
 ## Deployment
 
@@ -138,9 +207,12 @@ alan-ai-mondrian/
 1. Push your code to GitHub
 2. Import your repository on [Vercel](https://vercel.com)
 3. Add your `OPENAI_API_KEY` environment variable
-4. Deploy!
+4. Optionally configure `OPENAI_MODEL`, `AI_TEMP`, and `AI_MAX_TOKENS`
+5. Deploy!
 
 The app is optimized for Vercel's Edge Runtime.
+
+**Live Demo**: [alan-ai-one.vercel.app](https://alan-ai-one.vercel.app)
 
 ## Educational Use
 
@@ -150,7 +222,7 @@ This project is created for experimental and educational purposes by **Marlon Ba
 
 - **Concept and Development**: [Marlon Barrios Solano](https://marlonbarrios.github.io/)
 - **Inspired by**: Alan Turing's life and contributions to computer science and AI
-- **Built with**: Next.js, OpenAI API, and modern web technologies
+- **Built with**: Next.js, OpenAI API, p5.js, and modern web technologies
 
 ## License
 
