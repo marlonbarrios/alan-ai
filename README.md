@@ -104,7 +104,7 @@ pnpm dev
   - p5.js and creative coding projects
 
 <div align="center">
-  <img src="./public/Screenshot%202025-11-13%20at%201.38.26%20PM.png" alt="Alan-AI Chat Interface" width="800"/>
+  <img src="./public/image1.png" alt="Alan-AI Chat Interface" width="800"/>
   <p><em>Main chat interface with conversation history</em></p>
 </div>
 
@@ -120,7 +120,7 @@ When Alan provides code examples:
 6. **New Window**: Click "🔗 New Window" to open code output in a separate popup window
 
 <div align="center">
-  <img src="./public/Screenshot%202025-11-13%20at%201.40.08%20PM.png" alt="Code Execution" width="800"/>
+  <img src="./public/image2.png" alt="Code Execution" width="800"/>
   <p><em>Interactive code execution with p5.js</em></p>
 </div>
 
@@ -196,7 +196,7 @@ alan-ai/
 - **Cross-Browser Compatible**: Works on Chrome, Firefox, Safari, Edge
 
 <div align="center">
-  <img src="./public/Screenshot%202025-11-13%20at%201.40.19%20PM.png" alt="Code Runner Features" width="800"/>
+  <img src="./public/image3.png" alt="Code Runner Features" width="800"/>
   <p><em>Code runner with fullscreen and resize options</em></p>
 </div>
 
