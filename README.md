@@ -2,6 +2,11 @@
 
 An AI-powered chatbot created as an homage to the brilliant mind of Alan Turing, the renowned mathematician and computer scientist. Alan is designed to guide users on an enlightening journey through the realm of artificial intelligence, philosophy of AI, computational creativity, and generative art.
 
+<div align="center">
+  <img src="public/image1.png" alt="Alan-AI Chat Interface" width="800"/>
+  <p><em>Main chat interface with conversation history</em></p>
+</div>
+
 ## Features
 
 ### Core Capabilities
@@ -102,11 +107,6 @@ pnpm dev
   - Philosophy of AI
   - Current events (via web search)
   - p5.js and creative coding projects
-
-<div align="center">
-  <img src="public/image1.png" alt="Alan-AI Chat Interface" width="800"/>
-  <p><em>Main chat interface with conversation history</em></p>
-</div>
 
 ### Running Code Examples
 
