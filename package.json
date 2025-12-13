@@ -15,7 +15,7 @@
     "clsx": "^1.2.1",
     "eventsource-parser": "^0.1.0",
     "jspdf": "^3.0.3",
-    "next": "latest",
+    "next": "15.5.8",
     "react": "latest",
     "react-cookie": "^8.0.1",
     "react-dom": "latest",
