@@ -7,6 +7,9 @@ An AI-powered chatbot created as an homage to the brilliant mind of Alan Turing,
   <p><em>Main chat interface with conversation history</em></p>
 </div>
 
+## **Live Demo**: [alan-ai-one.vercel.app](https://alan-ai-one.vercel.app)
+
+
 ## Features
 
 ### Core Capabilities
@@ -212,7 +215,6 @@ alan-ai/
 
 The app is optimized for Vercel's Edge Runtime.
 
-**Live Demo**: [alan-ai-one.vercel.app](https://alan-ai-one.vercel.app)
 
 ## Educational Use
 
